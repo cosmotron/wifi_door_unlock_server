@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Locker</title>
+    </head>
+    <body>
+        <h1>Locker</h1>
+        {% if msg %}
+        <p>{{ msg }}</p>
+        {% endif %}
+
+        <form action="/" method="post">
+            <p>
+                Action: <button type="submit" name="action" value="on">Open</button> -
+                        <button type="submit" name="action" value="off">Close</button>
+            </p>
+        </form>
+    </body>
+</html>
+
